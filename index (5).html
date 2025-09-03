@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Mejores Juegos de 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #1a1a2e; /* Oscuro y futurista */
+            --primary-color: #0f3460;
+            --accent-color: #e94560; /* Rojo vibrante */
+            --text-color: #e0e0e0; /* Blanco suave */
+            --card-bg: #22223b;
+            --border-color: #3e445b;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            font-size: 3.5em;
+            color: var(--text-color);
+            text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+            letter-spacing: 3px;
+        }
+
+        header p {
+            font-size: 1.3em;
+            color: var(--text-color);
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8em;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            position: relative;
+            letter-spacing: 2px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 120px;
+            height: 4px;
+            background: var(--text-color);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 30px 0;
+        }
+
+        .game-card {
+            background-color: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .game-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+            border-color: var(--accent-color);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .game-info {
+            padding: 20px;
+        }
+
+        .game-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8em;
+            margin: 15px 0 10px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        .game-genre {
+            font-size: 1em;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        .game-description {
+            font-size: 0.9em;
+            color: var(--text-color);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .rating {
+            font-size: 1.3em;
+            color: gold;
+            margin-bottom: 10px;
+        }
+        .rating span {
+            color: var(--text-color);
+            font-size: 0.8em;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+            border-top: 5px solid var(--accent-color);
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            .section-title {
+                font-size: 2em;
+            }
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Los Juegos Más Esperados de 2025</h1>
+            <p>Un vistazo a los títulos que definirán el próximo año gamer</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Nuestra Selección TOP</h2>
+
+        <div class="game-grid">
+
+            <div class="game-card">
+                <img src="https://via.placeholder.com/600x400/1e90ff/ffffff?text=Cyberpunk+2078" alt="Cyberpunk 2078" class="game-image">
+                <div class="game-info">
+                    <h3 class="game-title">Cyberpunk 2078</h3>
+                    <p class="game-genre">RPG de Mundo Abierto / Sci-Fi</p>
+                    <p class="game-description">La secuela directa que promete redimir y expandir el universo de Night City con gráficos fotorrealistas y nuevas mecánicas de implantes.</p>
+                    <p class="rating">⭐⭐⭐⭐⭐ <span>(¡Imprescindible!)</span></p>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://via.placeholder.com/600x400/228b22/ffffff?text=Fantasy+Quest+VI" alt="Fantasy Quest VI" class="game-image">
+                <div class="game-info">
+                    <h3 class="game-title">Fantasy Quest VI</h3>
+                    <p class="game-genre">JRPG / Fantasía Épica</p>
+                    <p class="game-description">El regreso de una saga legendaria con un estilo artístico renovado, un sistema de combate innovador y una historia que te hará llorar.</p>
+                    <p class="rating">⭐⭐⭐⭐⭐ <span>(Clásico Moderno)</span></p>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://via.placeholder.com/600x400/800080/ffffff?text=Galactic+Conquest" alt="Galactic Conquest" class="game-image">
+                <div class="game-info">
+                    <h3 class="game-title">Galactic Conquest</h3>
+                    <p class="game-genre">Estrategia 4X / Espacial</p>
+                    <p class="game-description">Toma el control de tu propia facción espacial, explora galaxias inmensas, negocia o conquista para dominar el universo.</p>
+                    <p class="rating">⭐⭐⭐⭐ <span>(Ambicioso y Profundo)</span></p>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://via.placeholder.com/600x400/b22222/ffffff?text=Shadow+Hunter+VR" alt="Shadow Hunter VR" class="game-image">
+                <div class="game-info">
+                    <h3 class="game-title">Shadow Hunter VR</h3>
+                    <p class="game-genre">Acción / Realidad Virtual</p>
+                    <p class="game-description">Sumérgete en un mundo oscuro lleno de criaturas míticas. Usa tus habilidades de sigilo y combate para sobrevivir en la VR más inmersiva.</p>
+                    <p class="rating">⭐⭐⭐⭐ <span>(Innovador y Adictivo)</span></p>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://via.placeholder.com/600x400/4682b4/ffffff?text=Racing+Frenzy+2025" alt="Racing Frenzy 2025" class="game-image">
+                <div class="game-info">
+                    <h3 class="game-title">Racing Frenzy 2025</h3>
+                    <p class="game-genre">Carreras / Arcade</p>
+                    <p class="game-description">Adrenalina pura en las pistas más extremas. Personaliza tus vehículos y compite online para ser el campeón mundial de velocidad.</p>
+                    <p class="rating">⭐⭐⭐⭐ <span>(Pura Velocidad)</span></p>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://via.placeholder.com/600x400/ffa500/ffffff?text=Ancient+Mysteries+VR" alt="Ancient Mysteries VR" class="game-image">
+                <div class="game-info">
+                    <h3 class="game-title">Ancient Mysteries VR</h3>
+                    <p class="game-genre">Aventura / Puzzles VR</p>
+                    <p class="game-description">Explora ruinas antiguas y resuelve intrincados puzzles en un entorno de realidad virtual que te transportará a otro tiempo.</p>
+                    <p class="rating">⭐⭐⭐ <span>(Misterioso y Envolvente)</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gamer Insights. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
